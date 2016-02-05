@@ -48,7 +48,7 @@ int		entrycheck(char **tab)
 	i = 0;
 	while (tab[i] != NULL)
 	{
-		if (tetricheck(tab[i], 0) == -1 || linecheck(tab[i]) == -1)
+		if (tetricheck(tab[i], 0) == 0 || linecheck(tab[i]) == -1)
 			return (0);
 		i++;
 	}
