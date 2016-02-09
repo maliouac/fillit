@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <fcntl.h>
 #include "fillit.h"
 
 int		mapfill(char **tab, char *mapp, int n)

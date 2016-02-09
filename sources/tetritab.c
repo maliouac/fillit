@@ -10,10 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <fcntl.h>
-#include <stdlib.h>
 #include "fillit.h"
-#include <unistd.h>
 
 int		filecheck(char *path)
 {

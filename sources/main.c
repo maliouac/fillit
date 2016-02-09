@@ -6,13 +6,10 @@
 /*   By: maliouac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/03 13:33:29 by maliouac          #+#    #+#             */
-/*   Updated: 2016/02/03 13:33:31 by maliouac         ###   ########.fr       */
+/*   Updated: 2016/02/09 16:52:55 by maliouac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <fcntl.h>
-#include <stdlib.h>
 #include "fillit.h"
 
 int		main(int argc, char **argv)

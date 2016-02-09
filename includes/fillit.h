@@ -6,7 +6,7 @@
 /*   By: maliouac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/29 17:51:52 by maliouac          #+#    #+#             */
-/*   Updated: 2016/02/03 18:13:51 by maliouac         ###   ########.fr       */
+/*   Updated: 2016/02/09 16:49:17 by maliouac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <fcntl.h>
 
 char	*mapcheck(char *tetri, char *mapstart, char *map, int n);
 char	**alphaconvert(char **tab);
-int		tetricheck(char *buf, int i);
+int		tetricheck(char *buf);
 int		fill(char *buf, char *map, int n);
 int		ach(char *buf);
 char	**tetriconvert(char **tab);
@@ -42,5 +43,5 @@ int		isal(char c);
 int		charcheck(char a, char b, char c, char d);
 void	ft_putchar(char c);
 void	ft_putstr(char *s);
-
+int		charcount(char *tetri);
 #endif

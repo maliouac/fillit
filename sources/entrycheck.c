@@ -6,12 +6,11 @@
 /*   By: maliouac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/28 16:49:16 by maliouac          #+#    #+#             */
-/*   Updated: 2016/02/02 11:40:19 by maliouac         ###   ########.fr       */
+/*   Updated: 2016/02/09 16:56:24 by maliouac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
-#include <stdlib.h>
 
 int		linecheck(char *tetri)
 {
@@ -41,6 +40,25 @@ int		linecheck(char *tetri)
 		return (-1);
 }
 
+int charcount(char *tetri)
+{
+	int i;
+	int count;
+
+	i = 0;
+	count = 0;
+	while (tetri[i])
+	{
+		if (tetri[i] == '#')
+			count++;
+		i++;
+	}
+	if (count == 4)
+		return (1);
+	else
+		return (0);
+}
+
 int		entrycheck(char **tab)
 {
 	int i;
@@ -48,7 +66,8 @@ int		entrycheck(char **tab)
 	i = 0;
 	while (tab[i] != NULL)
 	{
-		if (tetricheck(tab[i], 0) == 0 || linecheck(tab[i]) == -1)
+		if (tetricheck(tab[i]) == 0 || linecheck(tab[i]) == -1
+		|| charcount(tab[i]) == 0)
 			return (0);
 		i++;
 	}
